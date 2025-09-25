@@ -1,0 +1,12 @@
+# Скачиваем архив официального клиента
+wget https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz
+
+# Распаковываем
+tar -xvzf ookla-speedtest-1.2.0-linux-x86_64.tgz
+
+# Перемещаем бинарь в системный путь
+sudo mv speedtest /usr/local/bin/
+sudo chmod +x /usr/local/bin/speedtest
+
+# Проверяем версию
+speedtest

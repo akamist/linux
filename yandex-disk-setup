@@ -1,0 +1,16 @@
+
+
+#Install command
+
+wget -O YANDEX-DISK-KEY.GPG http://repo.yandex.ru/yandex-disk/YANDEX-DISK-KEY.GPG
+apt-key add YANDEX-DISK-KEY.GPG
+sudo echo "deb http://repo.yandex.ru/yandex-disk/deb/ stable main" >> /etc/apt/sources.list.d/yandex-disk.list
+sudo apt-get update
+sudo apt-get install yandex-disk
+
+#Then Первоначальная настройка, создание токена и папки
+yandex-disk start
+yandex-disk setup
+
+#Check status
+yandex-disk status
